@@ -1,0 +1,123 @@
+.hidden {
+  visibility: hidden;
+}
+
+.block {
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.project {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project:hover,
+.project:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: var(--white-text);
+  background-color: var(--blue);
+}
+
+.button-name {
+  font-weight: 500;
+  background-color: var(--grey-background);
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+.butt + .butt {
+  margin-left: 8px;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio > .item {
+  flex-basis: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.thumb-portfolio {
+  position: relative;
+  overflow: hidden;
+  border-style: none;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-text);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  background-color: var(--blue-portfolio);
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.card {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-portfolio);
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+}
+
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.work {
+  color: var(--grey-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  margin-top: 0;
+  margin-bottom: 0;
+}
